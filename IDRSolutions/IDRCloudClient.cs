@@ -117,7 +117,7 @@ namespace idrsolutions_csharp_client
 
                     if (responseContent["state"] == "error")
                     {
-                        throw new Exception("Server error getting conversion status, see server logs for details");
+                        throw new Exception("Failed: Error with conversion\n" + rawContent);
                     }
                 }
 
