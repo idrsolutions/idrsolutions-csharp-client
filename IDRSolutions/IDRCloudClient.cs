@@ -117,7 +117,7 @@ namespace idrsolutions_csharp_client
 
                     if (responseContent["state"] == "error")
                     {
-                        throw new Exception("Server error getting conversion status, see server logs for details");
+                        throw new Exception("Failed: Error with conversion\n" + rawContent);
                     }
                 }
 
@@ -203,8 +203,8 @@ namespace idrsolutions_csharp_client
 
             if (response.StatusCode != HttpStatusCode.OK)
             {
-                throw new Exception("Error uploading file:\nServer returned response\n" + response.StatusCode + " - "
-                                    + response.StatusDescription);
+                throw new Exception("Error uploading file:\nServer returned response\n" + response.StatusCode + ":\n"
+                                    + response.Content);
             }
 
             var content = response.Content;

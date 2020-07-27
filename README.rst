@@ -7,6 +7,7 @@ The IDRsolutions Microservice Examples are open source projects that allows you 
 convert PDFs using various softwares from IDRSolutions_ as an online service.
 
 JPedal Microservice Example - Convert pages to images
+
 BuildVu Microservice Example - Convert PDFs to HTML or SVG
 
 IDR Solutions offer a free trial service for running these libraries with C#. You can

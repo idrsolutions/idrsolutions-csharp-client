@@ -37,7 +37,7 @@ First, import IDRCloudClient and setup the converter details by creating a new
 ::
 
     using idrsolutions_csharp_client;
-	IDRCloudClient client = new IDRCloudClient('http://localhost:8080/' + IDRCloudClient.JPEDAL);
+	IDRCloudClient client = new IDRCloudClient("http://localhost:8080/" + IDRCloudClient.JPEDAL);
 
 
 Next you need to create the conversion parameters :
