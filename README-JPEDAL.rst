@@ -20,7 +20,7 @@ Using Nuget:
 
 ::
 
-    $ nuget install idrsolutions_csharp_client
+    $ nuget install idrsolutions-csharp-client
 
 
 --------------
