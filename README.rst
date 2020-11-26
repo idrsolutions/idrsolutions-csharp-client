@@ -83,7 +83,7 @@ limitations under the License.
 .. _IDRSolutions: https://www.idrsolutions.com/
 .. _JPedal: https://www.idrsolutions.com/jpedal/
 .. _BuildVu: https://www.idrsolutions.com/buildvu/
-.. _BuildVu can be found here: https://docs.idrsolutions.com/buildvu/
-.. _JPedal can be found here: https://docs.idrsolutions.com/jpedal/
+.. _BuildVu can be found here: https://support.idrsolutions.com/buildvu/tutorials/cloud/
+.. _JPedal can be found here: https://support.idrsolutions.com/jpedal/tutorials/cloud/
 .. _here: https://idrsolutions.atlassian.net/servicedesk/customer/portal/8
 .. _code of conduct: CODE_OF_CONDUCT.md
