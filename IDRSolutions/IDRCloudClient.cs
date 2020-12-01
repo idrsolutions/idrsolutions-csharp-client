@@ -41,6 +41,7 @@ namespace idrsolutions_csharp_client
         public const string UPLOAD = "upload";
         public const string JPEDAL = "jpedal";
         public const string BUILDVU = "buildvu";
+        public const string FORMVU = "formvu";
 
         private readonly string _endpoint;
         private readonly int _requestTimeout;
