@@ -10,8 +10,10 @@ JPedal Microservice Example - Convert pages to images
 
 BuildVu Microservice Example - Convert PDFs to HTML or SVG
 
+FormVu Microservice Example - Convert PDF Forms to HTML
+
 IDR Solutions offer a free trial service for running these libraries with C#. You can
-find information at the following links for JPedal_ and BuildVu_.
+find information at the following links for JPedal_, BuildVu_ and FormVu_.
 
 --------------
 
@@ -41,6 +43,12 @@ JPedal:
 ~~~~~~~
 
 Full usage for connecting to `JPedal can be found here`_.
+
+
+FormVu:
+~~~~~~~
+
+Full usage for connecting to `FormVu can be found here`_.
 
 --------------
 
@@ -83,7 +91,9 @@ limitations under the License.
 .. _IDRSolutions: https://www.idrsolutions.com/
 .. _JPedal: https://www.idrsolutions.com/jpedal/
 .. _BuildVu: https://www.idrsolutions.com/buildvu/
+.. _FormVu: https://www.idrsolutions.com/formvu/
 .. _BuildVu can be found here: https://support.idrsolutions.com/buildvu/tutorials/cloud/
 .. _JPedal can be found here: https://support.idrsolutions.com/jpedal/tutorials/cloud/
+.. _FormVu can be found here: https://support.idrsolutions.com/formvu/tutorials/cloud/
 .. _here: https://idrsolutions.atlassian.net/servicedesk/customer/portal/8
 .. _code of conduct: CODE_OF_CONDUCT.md
