@@ -52,11 +52,11 @@ namespace idrsolutions_csharp_client
         /// Constructor, setup the converter details
         /// </summary>
         /// <param name="url">string, the URL of Microservice to connect to.</param>
-        /// <param name="conversionTimeout">int, (optional) the time to wait (in seconds) before timing out the conversion.
-        /// Set to 30s by default.</param>
+        /// <param name="conversionTimeout">int, (optional) the time to wait (in seconds) before timing out the conversion. If value <= 0 then the conversion does not time out.
+        /// Set to -1 by default.</param>
         /// <param name="requestTimeout">int, (optional) the time to wait (in milliseconds) before timing out each request.
         /// Set to 60000ms (60s) by default.</param>
-        public IDRCloudClient(string url, int conversionTimeout = 30, int requestTimeout = 60000)
+        public IDRCloudClient(string url, int conversionTimeout = -1, int requestTimeout = 60000)
         {
             _endpoint = url;
             _requestTimeout = requestTimeout;
@@ -70,11 +70,11 @@ namespace idrsolutions_csharp_client
         /// <param name="url">string, the URL of the web service.</param>
         /// <param name="username">string, the Username required to connect to the web service.</param>
         /// <param name="password">string, the Password required to connect to the web service.</param>
-        /// <param name="conversionTimeout">int, (optional) the time to wait (in seconds) before timing out the conversion.
-        /// Set to 30s by default.</param>
+        /// <param name="conversionTimeout">int, (optional) the time to wait (in seconds) before timing out the conversion. If value <= 0 then the conversion does not time out.
+        /// Set to -1 by default.</param>
         /// <param name="requestTimeout">int, (optional) the time to wait (in milliseconds) before timing out each request.
         /// Set to 60000ms (60s) by default.</param>
-        public IDRCloudClient(string url, string username, string password, int conversionTimeout = 30, int requestTimeout = 60000)
+        public IDRCloudClient(string url, string username, string password, int conversionTimeout = -1, int requestTimeout = 60000)
         {
             _endpoint = url;
             _requestTimeout = requestTimeout;
@@ -127,7 +127,7 @@ namespace idrsolutions_csharp_client
                     break;
                 }
 
-                if (i >= _conversionTimeout)
+                if (_conversionTimeout > 0 && i >= _conversionTimeout)
                 {
                     throw new Exception("Failed: File took longer than " + _conversionTimeout + " seconds to convert.");
                 }
