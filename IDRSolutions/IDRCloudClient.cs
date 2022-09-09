@@ -250,7 +250,7 @@ namespace idrsolutions_csharp_client
             {
                 var request = new RestRequest(downloadUrl, Method.Get);
                 byte[] response = _restClient.DownloadData(request);
-                    File.WriteAllBytes(outputFilePath, response);
+                File.WriteAllBytes(outputFilePath, response);
             }
             catch (Exception e)
             {
