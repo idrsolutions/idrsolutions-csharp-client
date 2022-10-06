@@ -6,7 +6,7 @@ class ExampleUsage
 {
     static void Main(string[] args)
     {
-        var client = new IDRCloudClient("http://trial.idrsolutions.com/trial/" + IDRCloudClient.BUILDVU);
+        var client = new IDRCloudClient("http://cloud.idrsolutions.com/cloud/" + IDRCloudClient.BUILDVU);
 
         try
         {
