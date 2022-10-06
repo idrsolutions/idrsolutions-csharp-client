@@ -27,7 +27,6 @@ using System.Threading;
 using Newtonsoft.Json;
 using RestSharp;
 using RestSharp.Authenticators;
-using RestSharp.Extensions;
 
 namespace idrsolutions_csharp_client
 {
@@ -172,7 +171,7 @@ namespace idrsolutions_csharp_client
         {
             var request = new RestRequest()
             {
-                Method = Method.POST,
+                Method = Method.Post,
                 Timeout = _requestTimeout
             };
 
@@ -219,11 +218,11 @@ namespace idrsolutions_csharp_client
             return parsedResponse["uuid"];
         }
 
-        private IRestResponse PollStatus(string uuid)
+        private RestResponse PollStatus(string uuid)
         {
             var request = new RestRequest()
             {
-                Method = Method.GET,
+                Method = Method.Get,
                 Timeout = _requestTimeout
             };
             request.AddParameter("uuid", uuid);
@@ -249,8 +248,9 @@ namespace idrsolutions_csharp_client
         {
             try
             {
-                var request = new RestRequest(downloadUrl, Method.GET);
-                _restClient.DownloadData(request).SaveAs(outputFilePath);
+                var request = new RestRequest(downloadUrl, Method.Get);
+                byte[] response = _restClient.DownloadData(request);
+                File.WriteAllBytes(outputFilePath, response);
             }
             catch (Exception e)
             {
