@@ -95,5 +95,5 @@ limitations under the License.
 .. _BuildVu can be found here: https://support.idrsolutions.com/buildvu/tutorials/cloud/
 .. _JPedal can be found here: https://support.idrsolutions.com/jpedal/tutorials/cloud/
 .. _FormVu can be found here: https://support.idrsolutions.com/formvu/tutorials/cloud/
-.. _here: https://idrsolutions.atlassian.net/servicedesk/customer/portal/8
+.. _here: https://idrsolutions.my.site.com/s/request
 .. _code of conduct: CODE_OF_CONDUCT.md
