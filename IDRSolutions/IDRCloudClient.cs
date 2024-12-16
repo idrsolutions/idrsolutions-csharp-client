@@ -59,7 +59,10 @@ namespace idrsolutions_csharp_client
             _endpoint = url;
             _requestTimeout = requestTimeout;
             _conversionTimeout = conversionTimeout;
-            _restClient = new RestClient(_endpoint);
+            var options = new RestClientOptions(_endpoint)
+            {
+            };
+            _restClient = new RestClient(options);
         }
 
         /// <summary>
@@ -77,8 +80,11 @@ namespace idrsolutions_csharp_client
             _endpoint = url;
             _requestTimeout = requestTimeout;
             _conversionTimeout = conversionTimeout;
-            _restClient = new RestClient(_endpoint);
-            _restClient.Authenticator = new HttpBasicAuthenticator(username, password);
+            var options = new RestClientOptions(_endpoint)
+            {
+                Authenticator = new HttpBasicAuthenticator(username, password)
+            };
+            _restClient = new RestClient(options);
         }
 
         /// <summary>
@@ -171,7 +177,7 @@ namespace idrsolutions_csharp_client
             var request = new RestRequest()
             {
                 Method = Method.Post,
-                Timeout = _requestTimeout
+                Timeout = TimeSpan.FromMilliseconds(_requestTimeout)
             };
 
             if (parameters.ContainsKey("file"))
@@ -222,7 +228,7 @@ namespace idrsolutions_csharp_client
             var request = new RestRequest()
             {
                 Method = Method.Get,
-                Timeout = _requestTimeout
+                Timeout = TimeSpan.FromMilliseconds(_requestTimeout)
             };
             request.AddParameter("uuid", uuid);
 
