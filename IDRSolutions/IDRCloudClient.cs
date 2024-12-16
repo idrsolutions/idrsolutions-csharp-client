@@ -1,5 +1,4 @@
 /**
-Copyright 2021 IDRsolutions
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -201,16 +200,16 @@ namespace idrsolutions_csharp_client
             }
 
             var response = _restClient.Execute(request);
-            if (response.ErrorException != null)
-            {
-                throw new Exception("Error uploading file:\n" + response.ErrorException.GetType() + "\n"
-                                    + response.ErrorMessage);
-            }
-
             if (response.StatusCode != HttpStatusCode.OK)
             {
                 throw new Exception("Error uploading file:\nServer returned response\n" + response.StatusCode + ":\n"
                                     + response.Content);
+            }
+
+            if (response.ErrorException != null)
+            {
+                throw new Exception("Error uploading file:\n" + response.ErrorException.GetType() + "\n"
+                                    + response.ErrorException.Message);
             }
 
             var content = response.Content;
@@ -235,16 +234,16 @@ namespace idrsolutions_csharp_client
 
             var response = _restClient.Execute(request);
 
-            if (response.ErrorException != null)
-            {
-                throw new Exception("Error checking conversion status:\n" + response.ErrorException.GetType() + "\n"
-                                    + response.ErrorMessage);
-            }
-
             if (response.StatusCode != HttpStatusCode.OK)
             {
                 throw new Exception("Error checking conversion status:\n Server returned response\n"
-                                    + response.StatusCode + " - " + response.StatusDescription);
+                                    + response.StatusCode + " - " + response.Content);
+            }
+
+            if (response.ErrorException != null)
+            {
+                throw new Exception("Error checking conversion status:\n" + response.ErrorException.GetType() + "\n"
+                                    + response.ErrorException.Message);
             }
 
             return response;
