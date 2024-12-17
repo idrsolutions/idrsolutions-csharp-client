@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>idrsolutions_csharp_client</RootNamespace>
-    <Version>6.0.0</Version>
+    <Version>6.0.1</Version>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 
     <PackageLicenseFile>LICENSE.txt</PackageLicenseFile>
