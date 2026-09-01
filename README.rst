@@ -6,11 +6,11 @@ Interact with any `IDRsolutions' Microservice Examples`_ using the IDRSolutions 
 The IDRsolutions Microservice Examples are open source projects that allows you to
 convert PDFs using various softwares from IDRSolutions_ as an online service.
 
-JPedal Microservice Example - Convert pages to images
+[JPedal](https://www.idrsolutions.com/jpedal/) Microservice Example - Convert pages to images
 
-BuildVu Microservice Example - Convert PDFs to HTML or SVG
+[BuildVu](https://www.idrsolutions.com/buildvu/) Microservice Example - Convert PDFs to HTML or SVG
 
-FormVu Microservice Example - Convert PDF Forms to HTML
+[FormVu](https://www.idrsolutions.com/formvu/) Microservice Example - Convert PDF Forms to HTML
 
 IDR Solutions offer a free trial service for running these libraries with C#. You can
 find information at the following links for JPedal_, BuildVu_ and FormVu_.
@@ -90,8 +90,8 @@ limitations under the License.
 .. _JPedal: https://www.idrsolutions.com/jpedal/
 .. _BuildVu: https://www.idrsolutions.com/buildvu/
 .. _FormVu: https://www.idrsolutions.com/formvu/
-.. _BuildVu can be found here: https://support.idrsolutions.com/buildvu/tutorials/cloud/
-.. _JPedal can be found here: https://support.idrsolutions.com/jpedal/tutorials/cloud/
-.. _FormVu can be found here: https://support.idrsolutions.com/formvu/tutorials/cloud/
+.. _BuildVu can be found here: https://www.idrsolutions.com/docs/buildvu/host-a-web-service/
+.. _JPedal can be found here: https://www.idrsolutions.com/docs/jpedal/host-a-web-service/
+.. _FormVu can be found here: https://www.idrsolutions.com/docs/formvu/host-a-web-service/
 .. _here: https://idrsolutions.my.site.com/s/request
 .. _code of conduct: CODE_OF_CONDUCT.md
